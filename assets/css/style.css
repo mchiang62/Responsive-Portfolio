@@ -9,8 +9,10 @@ header {
     display: block;
     width: 100%;
     height: 80px;
+    position: fixed;
+    top: 0;
     border-bottom: 1px solid gray;
-
+   
 }
 
 #name {
@@ -41,9 +43,6 @@ body {
     background-color: white;
     height: 100vh;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    
-    
-
 
 }
 
@@ -53,7 +52,7 @@ body {
     margin: auto;
     display: block;
     padding: 20px;
-    margin-top: 25px; 
+    margin-top: 125px; 
     
 }
 
@@ -80,9 +79,10 @@ h3 {
 
 #footer {
     background-color: #666666;
-    position: relative;
-    height: 75px;
-    margin-top: 35vh;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
     text-align: center;
     border-top: 8px solid #4aaaa5;
     color: white;
@@ -139,6 +139,107 @@ img {
     padding: 7px;
     margin-top: -55px;
     
+}
+
+@media screen and (max-width: 980px) {
+    .paragraphs {
+        width: 50%;
+        height: 70%;
+        padding: 20px;
+        margin-right: 350px;
+        margin-left: 50px;
+    }
+
+    #name {
+        margin-left: 50px;
+
+    }
+
+    textarea {
+        width: 375px;
+    
+    }
 
 }
 
+@media screen and (max-width: 768px) {
+    .paragraphs {
+        width: 50%;
+        height: 75%;
+        padding: 20px;
+        margin-right: 250px;
+    }
+
+    #name {
+        margin-left: 50px;
+
+    }
+
+    textarea {
+        width: 315px;
+    
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 640px) {
+    .paragraphs {
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        margin-right: 150px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        
+    
+    }
+
+    textarea {
+        width: 200px;
+    
+    }
+
+    .links {
+        float: none;
+        background-color: white;
+        display: block;
+        border-color: white;
+        background-color: white;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        margin: 0;
+        text-align: center;
+      
+
+    }
+    
+
+    #aboutpic {
+        height: 210px;
+        width: 225px;
+        float: none;
+
+
+    }
+
+    #name {
+        color: white;
+        width: 100%;
+        display: block;
+        padding: 19px;
+        border-style: solid;
+        border-color: #4aaaa5;
+        background-color: #4aaaa5;
+        float: none;
+        margin: 0;
+        text-align: center;
+
+
+    }
+
+
+}
